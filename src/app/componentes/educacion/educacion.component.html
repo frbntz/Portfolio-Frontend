@@ -1,12 +1,37 @@
 <div class="row">
     <h1 id="estudiostitle">Estudios</h1>
     <div class="col-lg-2" id="addbutton">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged" id="addbutton">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged" id="newedu">
             Agregar Estudios
         </button>
     </div>
 
-    <div class="col lg 1"></div>
+</div>
+<div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Educacion of educacion">
+    <div class="buttons" *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}" id="eduedit">
+            <i class="bi bi-pencil-fill"></i></button>
+        <button class="btn btn-danger" (click)="delete(Educacion.id)" id="edudelete">
+            <i class="bi bi-trash-fill"></i></button>
+    </div>
+    <div class="post-content">
+        <time class="post-date" style="color:#81D8F7;"> {{Educacion.nombreE}}</time>
+        <div class="blog-post-title">
+            <h5>
+                <p>
+                    {{Educacion.descripcionE}}
+                </p>
+            </h5>
+        </div>
+        <div class="blog-post-content">
+            <p style="color:#81D8F7">{{Educacion.descripcionE}}</p>
+        </div>
+    </div>
+
+</div>
+
+
+   <!-- <div class="col lg 1"></div>
     <div class="col-lg-11" id="educationtable">
         <table class="table" >
             <tbody>
@@ -26,6 +51,5 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </div> -->
 
-</div>

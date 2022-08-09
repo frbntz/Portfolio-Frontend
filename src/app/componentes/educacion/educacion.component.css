@@ -1,11 +1,71 @@
+@charset "UTF-8";
+
 .row {
   padding: 1px;
+  z-index: 1;
 }
 
-div, table {
+div {
   color: goldenrod;
 }
 
-#addbutton, #educationtable, #estudiostitle {
+
+#addeducacion {
   z-index: 1;
+  text-align: end;
+
+}
+
+#estudiostitle {
+  z-index: 1;
+  text-align: center;
+  border-bottom: 2px solid goldenrod;
+}
+
+#edudelete,
+#eduedit {
+  z-index: inherit;
+  justify-content: flex-end;
+  border-radius: 50%;
+}
+
+#newedu {
+  margin-bottom: 5px;
+  margin-right: 7px;
+}
+
+.post-articles {
+  width: 50%;
+  height: auto;
+  background-color: #1d1d1d;
+  padding: 30px;
+  color: #909096;
+  box-shadow: 0 0 5px 5px #191919;
+  margin-bottom: 30px;
+  border-radius: 2%;
+}
+
+.post-date {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blog-post-title h5 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 15px 0;
+}
+
+.blog-post-title h5 a:hover {
+  color: #06b99e;
+}
+
+.buttons {
+  margin-top: -25px;
+  margin-bottom: 0;
+  margin-right: 0;
+  text-align: end;
 }
