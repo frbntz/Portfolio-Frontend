@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.row {
+  padding: 1px;
+  z-index: 1;
+}
+
+div {
+ 
+  color: goldenrod;
+}
+
+#experiencetable, #addexperience, #exptitle {
+  z-index: 1;
+}
+
+/*para meter en la misma linea años y título del trabajo se puede usar
+la opción display: inline-block y demás*/

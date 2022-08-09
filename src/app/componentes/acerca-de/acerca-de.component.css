@@ -1,0 +1,37 @@
+.row-fluid, #presentacion {
+ z-index: 1;
+}
+
+h1 {
+  color: aquamarine;
+}
+
+p {
+  color: aqua;
+}
+
+@media (min-width: 576px) {
+  #profilepic {
+    position: relative;
+    width: 150%;
+    border-radius: 90%;
+    box-shadow: 1px 3px 2px #a2ff0b;
+    z-index: 1
+  }
+}
+#nombre {
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: justify;
+  text-size-adjust: auto;
+  text-justify: inter-word;
+  margin: auto;
+  z-index: 1;
+}
+
+#acerca-de {
+  text-justify: auto;
+  text-align: justify;
+  margin-top: 5px;
+  z-index: 1;
+}

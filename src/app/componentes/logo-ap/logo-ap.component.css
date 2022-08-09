@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.redes img {
+  height: 30px;
+  margin: 0px 2px;
+}
+
+.redes button {
+  margin-left: 10px;
+}

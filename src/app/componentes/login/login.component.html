@@ -1,0 +1,123 @@
+<section class="vh-100 gradient-custom" >
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5" id="loginwindow">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Ingrese usuario y contraseña</p>
+
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+                  <label class="form-label" for="typeEmailX">Usuario</label>
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required/>
+                  <label class="form-label" for="typePasswordX">Password</label>
+                </div>
+
+                <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p> -->
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+              </form>
+
+
+
+            </div>
+
+            <div>
+              <p class="mb-0">¿No tiene una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!--<h1>Iniciar Sesión</h1>
+
+<form [formGroup]="form" class="m-5">
+    <div clas="mb-3">
+      <label for="inputEmail">Dirección de correo electrónico</label>
+      <input type="email" formControlName="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+        <div *ngIf="Email?.errors && Email?.touched">
+            <p *ngIf="Email?.hasError('required')" class="text-danger">
+                El email es requerido.
+            </p>
+            <p *ngIf="Email?.hasError('email')" class="text-danger">
+                El formato de email debe ser válido.
+            </p>
+        </div>
+    </div>
+    <div class="mb-3">
+      <label for="inputPassword">Contraseña</label>
+      <input type="password" formControlName="password" class="form-control" id="inputPassword" placeholder="Ingrese su contraseña">
+        <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="text-danger">
+                La contraseña es requerida.
+            </p>
+            <p> *ngIf="Password?.errors?.minlength" class="text-danger">
+                La contraseña debe tener 8 o más caracteres.
+            </p>
+        </div>
+
+    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+--------------
+   <form [formGroup="form" (ngSubmit)="onEnviar($event)">
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" formControlName="mail">
+    </div>
+    <br/>
+    <div>
+        <label for="exampleInputPassword1" class="form-label">Password: </label>
+        <input type="password" formControlName="password">
+    </div>
+    <br/>
+    <div>
+        <button type="submit">Iniciar Sesión</button>
+    </div>
+</form> -->
+
+<!--Tengo que crear acá los getter de UserName, Password y mail, así como los valores de 
+sus condiciones de validación desde el template. Además tendría que agregar Username.
+También puedo crear los mensajes para el usuario y configurarlos para que se muestren dependiendo
+de la validación.
+Dentro de las validacioens que se hacen en el template para mostrar mensajes de error se observan
+las siguientes propiedades:
+.touched: Booleana que especifica si el form control fue tocado por el usuario.
+.errors: booleano que esp si el formulario tiene errores (falla una o más validaciones).
+
+Cuando un control no cumple reglas de validación, se reflejan en su propiedad errors que será un objeto con una propiedad
+por cada regla insatisfecha y un valor o mensaje de ayuda guardado en dicha propiedad.
+Los posibles estados de una validación son:
+valid
+invalid
+pending
+disabled (se explican por si mismas)
+
+El formulario tambien se somete a estos estados en función de como estén sus controles:
+prinstine: no tocado por el usuario
+dirty: modificado algún valor
+touched: el usuario ha tocado el control lanzando un evento blur al salir.
+untouched: el usuario no ha tocado y salido del control lanzando ningún evento blur.
+
+Estas validaciones son mientras el usuario interactua con los campos. El siguiente paso es hacer validaciones previas al envio
+de los datos al servidor.-->

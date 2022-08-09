@@ -1,0 +1,17 @@
+.row {
+  padding-top: 100px;
+}
+
+h1 {
+  color: aquamarine;
+  margin-bottom: 80px;
+}
+
+circle-progress {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#skillscontainer, .text-center {
+  z-index: 1;
+}

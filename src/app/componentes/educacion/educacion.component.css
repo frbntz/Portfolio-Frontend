@@ -1,0 +1,11 @@
+.row {
+  padding: 1px;
+}
+
+div, table {
+  color: goldenrod;
+}
+
+#addbutton, #educationtable, #estudiostitle {
+  z-index: 1;
+}

@@ -1,0 +1,59 @@
+<div class="row">
+    <h1 id="exptitle">Experiencia laboral</h1>
+    <div class="col-lg-2" id="addexperience">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11" id="experiencetable">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        <h2>{{Experiencia.nombreE}}</h2>
+                    </td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">
+    <h1 class="d-flex justify-content-center">Experiencia laboral</h1>
+    <div class="d-flex justify-content-center col-sm-12 col-md-11 col-lg-11">
+        <ul> 
+            <li> Acá lo interesante sería hacer un par de iteraciones
+            conectadas a un data.json, capaz, aunque también puede ser fijo, pero 
+        preferible darle una perspectiva que tenga en cuenta una proxima base
+    de datos. un *ngFor etc etc con js y protocolos http.
+    Lo mismo aplica para un posible component educación.
+              <h1>Exp</h1> 
+               <p><time>xxxx</time> - <time>xxxx</time></p>
+            </li>
+            <p>Descripcion del trabajo</p>
+        </ul>
+
+    </div>
+
+</div> -->

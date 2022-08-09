@@ -1,0 +1,11 @@
+div {
+  background-color: black;
+  z-index: 1;
+}
+
+app-logo-ap {
+  width: 100%;
+  display: flex;
+  background-color: black;
+  z-index: 1;
+}

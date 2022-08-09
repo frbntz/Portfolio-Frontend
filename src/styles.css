@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.component-wrapper {
+  background-color: rgb(3, 1, 35);
+  z-index: 0;
+}
+
+#particles-js{
+  background-color: blue;
+}
+
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat
+  }
