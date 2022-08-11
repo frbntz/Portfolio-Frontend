@@ -20,3 +20,43 @@
   background-position: 50% 50%;
   background-repeat: no-repeat
   }
+
+  .post-articles {
+    width: 65%;
+    height: auto;
+    background-color: #1d1d1d;
+    padding: 30px;
+    color: #909096;
+    box-shadow: 0 0 5px 5px #191919;
+    margin-bottom: 30px;
+    border-radius: 2%;
+  }
+
+  .post-date {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  .blog-post-title h5 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 15px 0;
+  }
+  
+  .blog-post-title h5 a:hover {
+    color: #06b99e;
+  }
+  
+  .buttons {
+    margin-top: -25px;
+    margin-bottom: 0;
+    margin-right: -12px;
+    text-align: end;
+  }
+
+  .button {
+    margin: 2px;
+  }

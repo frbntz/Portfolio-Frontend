@@ -11,6 +11,7 @@ import { SEducacionService } from 'src/app/service/seducacion.service';
 export class NewEducacionComponent implements OnInit {
   nombreE: string = '';
   descripcionE: string = '';
+  tiempoE: string = '';
 
   constructor(private sEducacion: SEducacionService, private router: Router) { }
 
@@ -18,7 +19,7 @@ export class NewEducacionComponent implements OnInit {
   }
 
   onCreate(): void {
-    const edu = new Educacion(this.nombreE, this.descripcionE);
+    const edu = new Educacion(this.nombreE, this.descripcionE, this.tiempoE);
     this.sEducacion.save(edu).subscribe(
       data => {
         alert("Experiencia educativa añadida");

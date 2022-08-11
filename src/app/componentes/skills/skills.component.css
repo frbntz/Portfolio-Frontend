@@ -1,4 +1,52 @@
-.row {
+.skillscontainer {
+  color: aquamarine;
+
+}
+
+.skills-desc {
+  width: 50%;
+}
+
+.skills-title {
+  font-weight: 600;
+  font-size: 5.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aquamarine;
+}
+
+.p {
+  color: aquamarine;
+}
+
+.skills-progreso {
+  width: 50%;
+  color: aquamarine;
+}
+
+.skill {
+  padding: 30px;
+}
+
+.skill-name {
+  margin-bottom: 5px;
+}
+
+#name {
+  color: aquamarine;
+  font-weight: 600;
+  font-size: large;
+  margin-left: 10px;
+}
+
+.progress {
+  height: 1%;
+}
+
+.circle-progress {
+  display: inline-flex;
+}
+
+/*.row {
   padding-top: 100px;
 }
 
@@ -14,4 +62,4 @@ circle-progress {
 
 #skillscontainer, .text-center {
   z-index: 1;
-}
+}*/
