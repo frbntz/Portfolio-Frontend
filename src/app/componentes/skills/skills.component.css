@@ -3,10 +3,6 @@
 
 }
 
-.skills-desc {
-  width: 50%;
-}
-
 .skills-title {
   font-weight: 600;
   font-size: 5.3rem;
@@ -14,13 +10,21 @@
   color: aquamarine;
 }
 
+.skills-desc {
+  width: 45%;
+  margin-left: 15px;
+}
+
+
 .p {
   color: aquamarine;
 }
 
 .skills-progreso {
-  width: 50%;
+  width: 45%;
   color: aquamarine;
+  text-align: center;
+  align-self: flex-end;
 }
 
 .skill {
@@ -44,6 +48,7 @@
 
 .circle-progress {
   display: inline-flex;
+  
 }
 
 /*.row {
