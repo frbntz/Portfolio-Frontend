@@ -9,12 +9,15 @@
   color: aquamarine;
 }
 
-.hardskillsprogress {
+.hardskillscontainer {
+  align-self: center;
+  margin-top: 100px;
+  }
 
-  align-items: center;
-  justify-content: center;
+.hardskillsprogress {
   text-align: center;
-  transform: rotate(-25deg);
+  transform: rotate(-15deg);
+  justify-self: flex-start;
 }
 
 .softskills {
