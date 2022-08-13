@@ -15,11 +15,22 @@
       try {
         TagCanvas.Start('myCanvas', 'tags', {
           textColour: 'aquamarine',
-          outlineColour: '#ff00ff',
+          outlineColour: 'aquamarine',
           reverse: true,
           depth: 0.8,
           maxSpeed: 0.05,
-          imageMode: "both"
+          imageMode: "both",
+          bgColour: "white",
+          bgRadius: "60",
+          imageRadius: "60%",
+          dragControl: false,
+          maxSpeed: 0.1,
+          noSelect: false,
+          outlineMethod: "block",
+          outlineRadius: "50",
+          outlineOffset: "8",
+          
+
         });
       } catch (e) {
         // something went wrong, hide the canvas container

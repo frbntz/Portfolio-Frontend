@@ -41,3 +41,23 @@ div {
   border-radius: 50%;
 }
 
+.derecho {
+  margin-bottom: 100px;
+}
+
+.flex-container{
+  display: flex;
+  width: 100%;
+}
+
+.div1  {
+  display:  inline-flex;
+  width: 50%;
+}
+
+.div2 {
+  display: inline-flex;
+  height: 100px;
+  width: 50%;
+  margin-bottom: 150px;
+}
