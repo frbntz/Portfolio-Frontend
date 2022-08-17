@@ -1,34 +1,37 @@
-<div class="flex-container">
-    <div class="exptitle">
-        <h1 id="exptitle">Experiencia </h1>
-    </div>
-    <div class="addexperience">
-        <button type="button" class="btn btn-dark button" routerLink="/nuevaexp" *ngIf="isLogged" id="newexp">
-            <i class="bi bi-plus-circle-fill"></i>
-        </button>
-    </div>
-
-</div>
-
-
-<div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Experiencia of expe">
-    <div class="buttons" *ngIf="isLogged">
-        <button class="btn btn-light button" routerLink="/editexp/{{Experiencia.id}}" id="expedit">
-            <i class="bi bi-pencil-fill"></i></button>
-        <button class="btn btn-danger button" (click)="delete(Experiencia.id)" id="expdelete">
-            <i class="bi bi-trash-fill"></i></button>
-    </div>
-    <div class="post-content">
-        <time class="post-date" style="color:#81D8F7;"> {{Experiencia.nombreE}}</time>
-        <div class="blog-post-title">
-            <h5>
-                <p>
-                    {{Experiencia.descripcionE}}
-                </p>
-            </h5>
+<div class="container">
+    <div class="row exptitle">
+        <div class="col-9 d-flex edutitle">
+            <h1 id="exptitle">Experiencia </h1>
         </div>
-        <div class="blog-post-content">
-            <time style="color:#81D8F7">{{Experiencia.tiempoE}}</time>
+
+        <div class="col-3 d-flex justify-content-end align-items-center addexp" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark button" routerLink="/nuevaexp" id="newexp">
+                <i class="bi bi-plus-circle-fill"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-end ">
+        <div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Experiencia of expe">
+            <div class="buttons" *ngIf="isLogged">
+                <button class="btn btn-light button" routerLink="/editexp/{{Experiencia.id}}" id="edit">
+                    <i class="bi bi-pencil-fill"></i></button>
+                <button class="btn btn-danger button" (click)="delete(Experiencia.id)" id="delete">
+                    <i class="bi bi-trash-fill"></i></button>
+            </div>
+            <div class="post-content">
+                <p class="post-date" style="color:#81D8F7;"> {{Experiencia.nombreE}}</p>
+                <div class="blog-post-title">
+                    <h5>
+                        <p style="color:goldenrod">
+                            {{Experiencia.descripcionE}}
+                        </p>
+                    </h5>
+                </div>
+                <div class="blog-post-content">
+                    <time style="color:#81D8F7">{{Experiencia.tiempoE}}</time>
+                </div>
+            </div>
         </div>
     </div>
 </div>

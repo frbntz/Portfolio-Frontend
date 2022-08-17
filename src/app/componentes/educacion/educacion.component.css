@@ -1,39 +1,23 @@
 @charset "UTF-8";
 
-.flex-container {
-  padding: 5px;
-  z-index: 1;
-  width: 65%;
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 551px) {
+  #edutitle {
+    color: #ccd6f6d8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+  }
 }
 
-.edutitle {
-  flex: 1;
-  width: 30%;
+@media (max-width: 550px) {
+  #edutitle {
+    color: #ccd6f6d8;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15vw;
+    font-weight: 600;
+  }
 }
 
-div {
-  color: goldenrod;
-}
-
-#addeducacion {
-  z-index: 1;
-  text-align: end;
-}
-
-#estudiostitle {
-  z-index: 1;
-  margin-left: 10px;
-  border-bottom: 2px solid goldenrod;
-}
-
-#edudelete,
-#eduedit {
-  z-index: inherit;
-  justify-content: flex-end;
-  border-radius: 50%;
-}
 
 #newedu {
   margin-bottom: 5px;
@@ -41,23 +25,7 @@ div {
   border-radius: 50%;
 }
 
-.derecho {
-  margin-bottom: 100px;
-}
-
-.flex-container{
-  display: flex;
-  width: 100%;
-}
-
-.div1  {
-  display:  inline-flex;
-  width: 50%;
-}
-
-.div2 {
-  display: inline-flex;
-  height: 100px;
-  width: 50%;
-  margin-bottom: 150px;
+.post-articles {
+  width: 80%;
+  margin: 1%;
 }

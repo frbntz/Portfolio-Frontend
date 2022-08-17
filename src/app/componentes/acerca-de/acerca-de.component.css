@@ -3,40 +3,74 @@
   margin-bottom: 100px;
 }
 
-.row-fluid, #presentacion {
- z-index: 1;
+.foto {
+  margin-bottom: 50px;
+  
 }
 
-h1 {
-  color: aquamarine;
+.fotoperfil {
+  width: 50%;
+ 
 }
 
-p {
-  color: aquamarine;
+.namerol {
+  margin-top: 25px;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
 }
 
-@media (min-width: 576px) {
-  #profilepic {
-    position: relative;
-    width: 150%;
-    border-radius: 90%;
-    box-shadow: 1px 3px 2px #a2ff0b;
-    z-index: 1
-  }
-}
 #nombre {
+  color: #81D8F7;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: sans-serif;
-  text-align: justify;
+  text-align: center;
   text-size-adjust: auto;
   text-justify: inter-word;
   margin: auto;
   z-index: 1;
 }
 
-#acerca-de {
+#rol {
+  color: #ccd6f6d8;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.acerca-de {
+  margin-top: 50px;
   text-justify: auto;
-  text-align: justify;
-  margin-top: 5px;
+  color:aquamarine;
+  margin-top: 50px;
   z-index: 1;
 }
+
+.title h1 {
+  text-align: center;
+  color: #ccd6f6d8;
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about {
+  text-justify: auto;
+  border: 1.5px solid #ccd6f6d8;
+}
+
+
+
+
+
+/*
+@media (min-width: 576px) {
+  #profilepic {
+    position: relative;
+    width: 150%;
+    border-radius: 90%;
+    box-shadow: 1px 3px 2px aquamarine;
+    z-index: 1
+  }
+}*/

@@ -1,9 +1,5 @@
-div {
-  background-color: black;
-  z-index: 1;
-}
-
 app-logo-ap {
   background-color: black;
   z-index: 1;
+  width: 100%;
 }

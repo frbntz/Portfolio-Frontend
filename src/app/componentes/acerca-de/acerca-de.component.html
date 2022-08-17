@@ -1,24 +1,50 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <img id="profilepic" class="img-fluid" src="assets\Profilepic.jpg" />
+<div class="container">
+    <div class="row d-flex justify-content-evenly foto">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center profilepic">
+            <img class="img-fluid fotoperfil" src="assets\Profilepic.jpg" />
         </div>
-        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col align-self-center" id="presentacion">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center  namerol">
             <h3>
-                <p id="nombre">Fernán Benitez</p>
+                <p class="d-flex flex-column" id="nombre">Fernán Benitez</p>
             </h3>
-            <p id="rol">Full Stack Developer</p>
+            <p class="d-flex flex-column" id="rol">Full Stack Developer</p>
         </div>
-        <div class="row-fluid">
-            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="acerca-de">
-                <span>
-                    <h1>Acerca de mi</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore tempora accusantium aliquid nisi assumenda aspernatur voluptatibus.
-                        Odio dolor repudiandae exercitationem minima, error, possimus tenetur ipsum,
-                        aut iure eaque omnis id?</p>
-                </span>
+    </div>
+    <div class="row d-flex justify-content-between acerca-de">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center title">
+            <h1 style="color: #81D8F7">Acerca de mi</h1>
+        </div>
+
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 post-articles"
+            style="border-top: 2px solid #81D8F7">
+            <div class="d-flex align-items-start justify-content-end buttons " *ngIf="isLogged">
+                <button class="btn btn-light button" id="edit">
+                    <i class="bi bi-pencil-fill" ></i></button>
+                <button class="btn btn-danger button" id="delete">
+                    <i class="bi bi-trash-fill"></i></button>
+            </div>
+            <div class="post-content">
+                <p class="post-date" style="color:#81D8F7;"></p>
+                <div class="blog-post-title">
+                    <h5>
+
+                        <p style="color: goldenrod">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore tempora accusantium aliquid nisi assumenda aspernatur voluptatibus.
+                            Odio dolor repudiandae exercitationem minima, error, possimus tenetur ipsum,
+                            aut iure eaque omnis id?</p>
+                        <p style="color: goldenrod">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            debitis impedit amet!
+                            Omnis, explicabo
+                            nihil ab adipisci, non suscipit quis a eum expedita praesentium, dolores eligendi
+                            voluptate quaerat
+                            tempora hic?</p>
+
+                    </h5>
+                </div>
             </div>
         </div>
     </div>
+
+
+
 </div>

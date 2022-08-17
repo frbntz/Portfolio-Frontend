@@ -1,20 +1,17 @@
-<div class="row">
-    <div class="container">
-        <div class="logo">
-            <img src="../../assets/APLogo-20-20.png"/>
-        </div>
-        <div class="redes"> 
-            
-            <a href=""><img src="../../../assets/linkedin.png" id="linkedin"/></a>
-            <a href=""><img src="../../../assets/instagram.png" id="instagram"/></a>
-            <a href=""><img src="../../../assets/facebook.png" id="facebook"/></a>
-            <a href=""><img src="../../../assets/github.png" id="github"/></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
-            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
-
+<div class="row d-flex align-items-center justify-content-between">
+    <div class="col d-flex justify-content-start logo">
+        <img src="../../assets/APLogo-20-20.png" />
+    </div>
+    <div class="col d-flex justify-content-end align-items-center redes">
+        <a href=""><img src="../../../assets/linkedin.png" id="linkedin" /></a>
+        <a href=""><img src="../../../assets/instagram.png" id="instagram" /></a>
+        <a href=""><img src="../../../assets/facebook.png" id="facebook" /></a>
+        <a href=""><img src="../../../assets/github.png" id="github" /></a>
+        <div id="log">
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar sesión</button>
         </div>
 
     </div>
+
 </div>
-
-

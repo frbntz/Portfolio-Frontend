@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-html, body {
+@font-face {
+  font-family: Tisa;
+  src: url(assets/fonts/TisaSans.ttf) format('truetype');
+}
+
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -8,7 +14,7 @@ html, body {
   z-index: 1;
 }
 
-#particles-js{
+#particles-js {
   background-color: black;
 }
 
@@ -22,44 +28,58 @@ html, body {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat
-  }
+}
 
-  .post-articles {
-    width: 65%;
-    height: auto;
-    background-color: #1d1d1d;
-    padding: 30px;
-    color: #909096;
-    box-shadow: 0 0 5px 5px #191919;
-    margin-bottom: 30px;
-    border-radius: 2%;
-  }
+.title {
+  color: #ccd6f6d8;
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  .post-date {
-    font-size: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-  
-  .blog-post-title h5 a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    margin: 15px 0;
-  }
-  
-  .blog-post-title h5 a:hover {
+.post-articles {
+  width: 65%;
+  height: auto;
+  background-color: #1d1d1d;
+  padding: 30px;
+  color: #909096;
+  box-shadow: 0 0 5px 5px #191919;
+  margin-bottom: 30px;
+  border-radius: 2%;
+}
+
+.post-date {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blog-post-title h5 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 15px 0;
+}
+
+/* .blog-post-title h5 a:hover {
     color: #06b99e;
-  }
-  
-  .buttons {
-    margin-top: -25px;
-    margin-bottom: 0;
-    margin-right: -12px;
-    text-align: end;
-  }
+  }*/
 
-  .button {
-    margin: 2px;
-  }
+.buttons {
+  margin-top: -25px;
+  margin-bottom: 0;
+  margin-right: -12px;
+  text-align: end;
+}
+
+.button {
+  margin: 2px;
+}
+
+#edit,
+#delete {
+  z-index: inherit;
+  justify-content: end;
+  border-radius: 50%;
+}

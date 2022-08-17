@@ -1,11 +1,7 @@
-.container {
-  display: flex;
+.row {
+  background-color: black;
   justify-content: space-between;
   align-items: center;
-}
-
-.row {
-  width: 100%;
 }
 
 .logo img {
@@ -19,4 +15,10 @@
 
 .redes button {
   margin-left: 10px;
+}
+
+#log {
+  margin-right: 15px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }

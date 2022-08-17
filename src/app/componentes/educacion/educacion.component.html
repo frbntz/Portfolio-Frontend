@@ -1,43 +1,40 @@
-<div class="flex-container">
-    <div class="edutitle">
-        <h1 id="edutitle">Educación </h1>
-    </div>
-    <div class="addeducacion" *ngIf="isLogged" >
-        <button type="button" class="btn btn-dark button" routerLink="/nuevaedu" id="newedu">
-            <i class="bi bi-plus-circle-fill"></i>
-        </button>
-    </div>
-</div>
-
-
-<div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Educacion of educacion">
-    <div class="buttons" *ngIf="isLogged">
-        <button class="btn btn-light button" routerLink="/editedu/{{Educacion.id}}" id="eduedit">
-            <i class="bi bi-pencil-fill"></i></button>
-        <button class="btn btn-danger button" (click)="delete(Educacion.id)" id="edudelete">
-            <i class="bi bi-trash-fill"></i></button>
-    </div>
-    <div class="post-content">
-        <time class="post-date" style="color:#81D8F7;"> {{Educacion.nombreE}}</time>
-        <div class="blog-post-title">
-            <h5>
-                <p>
-                    {{Educacion.descripcionE}}
-                </p>
-            </h5>
+<div class="container">
+    <div class="row edutitle">
+        <div class="col-9 d-flex edutitle">
+            <h1 id="edutitle">Educación </h1>
         </div>
-        <div class="blog-post-content">
-            <time style="color:#81D8F7">{{Educacion.tiempoE}}</time>
+
+        <div class="col-3 d-flex justify-content-end align-items-center addeducacion" *ngIf="isLogged">
+            <button type="button" class="btn btn-dark button" routerLink="/nuevaedu" id="newedu">
+                <i class="bi bi-plus-circle-fill"></i>
+            </button>
         </div>
     </div>
+
+    <div class="row d-flex justify-content-end ">
+        <div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Educacion of educacion">
+            <div class="buttons" *ngIf="isLogged">
+                <button class="btn btn-light button" routerLink="/editedu/{{Educacion.id}}" id="edit">
+                    <i class="bi bi-pencil-fill"></i></button>
+                <button class="btn btn-danger button" (click)="delete(Educacion.id)" id="delete">
+                    <i class="bi bi-trash-fill"></i></button>
+            </div>
+            <div class="post-content">
+                <p class="post-date" style="color:#81D8F7;"> {{Educacion.nombreE}}</p>
+                <div class="blog-post-title">
+                    <h5>
+                        <p style="color:goldenrod">
+                            {{Educacion.descripcionE}}
+                        </p>
+                    </h5>
+                </div>
+                <div class="blog-post-content">
+                    <time style="color:#81D8F7">{{Educacion.tiempoE}}</time>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-<div class="flex-container" style="height:100px">
-    <div class="div1"></div>
-    <div class="div2"></div>
-</div>
-
-
 <!-- <div class="col lg 1"></div>
     <div class="col-lg-11" id="educationtable">
         <table class="table" >
