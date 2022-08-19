@@ -8,19 +8,62 @@
             </header>
         </div>
 
-        <!--    -->
+        <div class="col-lg-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center hardskillscontainer">
+            <div class="col hardskills">
+                <div class="col hardskillsimg" *ngFor="let Hskill of hSkill">
+                    <img src="{{Hskill.img}}" alt="{{Hskill.nombre}}" title="{{Hskill.nombre}}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row softskills">
+        <div class="col skills-descripcion" contenteditable="true">
+            <p style="color: aquamarine; text-align:left;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi ea quod. Atque ex culpa et
+                dolore animi a distinctio architecto, voluptatum fuga obcaecati consequuntur cumque commodi recusandae
+                vel
+                quaerat.
+            </p>
+            <p style="color:aquamarine">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis sit vel, eveniet sequi ut beatae
+                dicta, reprehenderit libero modi voluptatum. Quo tempora nisi commodi. Placeat facilis aliquid id dicta?
+            </p>
+        </div>
+
+        <div class="col canvas">
+            <div class="skills-charts">
+                <div id="myCanvasContainer" style="color:aquamarine">
+                    <canvas width="300" height="300" id="myCanvas">
+                        <ul id="tags">
+                            <li></li>
+
+                            <li><a href="#" target="_blank"><img src="../assets/rubik.png" width="20%" height="20%"></a>
+                            </li>
+                            <li><a href="#" target="_blank"><img src="../assets/translate2.png" width="20%"
+                                        height="20%"></a></li>
+                            <li><a href="#" target="_blank"><img src="../assets/organized.png" width="20%"
+                                        height="20%"></a></li>
+                            <li><a href="#" target="_blank"><img src="../assets/adaptation1.png" width="20%"
+                                        height="20%"></a></li>
+                            <li><a href="#" target="_blank"><img src="../assets/clock.png" width="20%" height="20%"></a>
+                            </li>
+                            <li><a href="#" target="_blank"><img src="../assets/teamwork.png" width="20%"
+                                        height="20%"></a></li>
+                            <li><a href="#" target="_blank"><img src="../assets/communication.png" width="20%"
+                                        height="20%"></a></li>
+                            <li><a href="#" target="_blank"><img src="../assets/lightbulb.png" width="20%"
+                                        height="20%"></a></li>
+
+                        </ul>
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-        <!-- <div class="skill">
-            <div class="skill-name">
-                <img src='../assets/html.png' height="50px">
-                <span id="name" style="color:aquamarine">HTML 5</span>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100"></div>
-            </div>
-        </div>-->
+    <!--
         <div class="col-lg-6 col-sm-12 col-xs-12 hardskillscontainer">
             <div class="col hardskillsprogress">
                 <div class="circle-progress">
@@ -79,196 +122,14 @@
                         [animation]="true" [animationDuration]="300"></circle-progress>
                 </div>
 
-            </div>
-        </div>
-    </div>
-
-    <div class="row softskills">
-        <div class="col skills-descripcion">
-            <p style="color: aquamarine">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi ea quod. Atque ex culpa et
-                dolore animi a distinctio architecto, voluptatum fuga obcaecati consequuntur cumque commodi recusandae
-                vel
-                quaerat.
-            </p>
-            <p style="color:aquamarine">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis sit vel, eveniet sequi ut beatae
-                dicta, reprehenderit libero modi voluptatum. Quo tempora nisi commodi. Placeat facilis aliquid id dicta?
-            </p>
-        </div>
-
-        <div class="col canvas">
-            <div class="skills-charts">
-                <div id="myCanvasContainer" style="color:aquamarine">
-                    <canvas width="300" height="300" id="myCanvas">
-                        <ul id="tags">
-                            <li></li>
-
-                            <li><a href="#" target="_blank"><img src="../assets/rubik.png" width="20%" height="20%"></a>
-                            </li>
-                            <li><a href="#" target="_blank"><img src="../assets/translate2.png" width="20%"
-                                        height="20%"></a></li>
-                            <li><a href="#" target="_blank"><img src="../assets/organized.png" width="20%"
-                                        height="20%"></a></li>
-                            <li><a href="#" target="_blank"><img src="../assets/adaptation1.png" width="20%"
-                                        height="20%"></a></li>
-                            <li><a href="#" target="_blank"><img src="../assets/clock.png" width="20%" height="20%"></a>
-                            </li>
-                            <li><a href="#" target="_blank"><img src="../assets/teamwork.png" width="20%"
-                                        height="20%"></a></li>
-                            <li><a href="#" target="_blank"><img src="../assets/communication.png" width="20%"
-                                        height="20%"></a></li>
-                            <li><a href="#" target="_blank"><img src="../assets/lightbulb.png" width="20%"
-                                        height="20%"></a></li>
-
-                        </ul>
-                    </canvas>
+                <div class="circle-progress">
+                    <circle-progress [percent]="75" [radius]="50" [imageSrc]="'../assets/spring.png'" [showImage]="true"
+                        [imageHeight]="65" [imageWidth]="65" [title]="'Spring Boot'" [titleColor]="'pink'"
+                        [titleFontSize]="'3em'" [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="5"
+                        [innerStrokeWidth]="2" [outerStrokeColor]="'#6D833F'" [innerStrokeColor]="'#C7E596'"
+                        [animation]="true" [animationDuration]="300"></circle-progress>
                 </div>
+
             </div>
         </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <h1 class="text-center">Hard & Soft Skills</h1>
-    
-        <div class="text-center col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="10"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-            <p style="color:white">HTML 5</p>
-        </div>
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="6"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-        </div>   
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-        </div>   
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-        </div>   
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-        </div>       
-        <div class="text-center col-sm-4 col-md-4 col-lg-4">
-            <circle-progress
-                [percent]="85"
-                [radius]="100"
-                [imageSrc]="'../assets/html.png'"
-                [showImage]="true"
-                [imageHeight]="70"
-                [imageWidth]="70"
-                [title]="'html'"
-                [titleColor]="'pink'"
-                [titleFontSize]="'3em'"
-                [showSubtitle]="false"
-                [showUnits]="false"
-                [outerStrokeWidth]="16"
-                [innerStrokeWidth]="2"
-                [outerStrokeColor]="'#78C000'"
-                [innerStrokeColor]="'#C7E596'"
-                [animation]="true"
-                [animationDuration]="300"    
-            ></circle-progress>
-        </div>    -->
+    -->
