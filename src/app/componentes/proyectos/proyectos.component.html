@@ -1,28 +1,29 @@
 <div class="container">
-    < <div class="row" id="row">
+    <div class="row" id="row">
         <div class="col">
             <h1 id="title">Proyectos<br> realizados</h1>
         </div>
-        <div class="col">
-            <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-                <h3 style="color:aqua">Proyecto</h3>
-                <p style="color:goldenrod">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Maiores ullam aliquam voluptatem! Consequatur consectetur aliquid odio,
-                    facere error iste similique blanditiis accusantium odit, veniam explicabo sed voluptatum.
-                    Eum, voluptates et.</p>
-            </div>
-           
-                <!--Alguna imagen tal vez. offset te marca que en el caso de estar en
-            por ejemplo md dejar una columna entre medio de los elementos. En este caso
-            quedaría 7 de la parte1 + 1 de separacion + 3 de la otra div-->
-                <!--La iamgen quedaria <img src="xxx" class="img-fluid img-proyecto(esta ultima
-            solo declara una clase por si necesitas para el CSS"-->
-            </div>
 
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-12 d-flex justify-content-center" style="width:50%">
+            <div class="card-group">
+                <div class="card" *ngFor="let Proyecto of proyecto">
+                    <img class="card-img" src="{{Proyecto.img}}" alt="Proyecto">
+                    <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                        <h4 class="card-title">{{Proyecto.nombre}}</h4>
+                        <p class="card-text">{{Proyecto.descripcion}}
+                        </p>
+                        <div class="link d-flex">
+                            <a href="#" class="card-link text-warning"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
+    </div>
 </div>
 
-
-/div>
+<!--Alguna imagen tal vez. offset te marca que en el caso de estar en
+            por ejemplo md dejar una columna entre medio de los elementos. En este caso
+            quedaría 7 de la parte1 + 1 de separacion + 3 de la otra div-->
+<!--La iamgen quedaria <img src="xxx" class="img-fluid img-proyecto(esta ultima
+            solo declara una clase por si necesitas para el CSS"-->

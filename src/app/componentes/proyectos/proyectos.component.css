@@ -11,7 +11,24 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.img-proyecto {
-  box-shadow: 10px 10px 30px pink;
-  /*box-shadow: ejeX ejeY difumación color*/
+.card {
+  width: 100%;
+  background-color: goldenrod;
+  border-width: 1px;
+  margin: 5px;
+}
+
+.card-img-overlay {
+  background-color: rgba(13, 97, 70, 0.52);
+}
+
+.card-title {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.card-subtitle, .card-text {
+  font-weight: 200;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
