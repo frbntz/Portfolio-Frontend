@@ -1,11 +1,11 @@
 <div class="container">
     <div class="row d-flex justify-content-evenly foto">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center profilepic">
-            <img class="img-fluid fotoperfil" src="assets\Profilepic.jpg" />
+            <img class="img-fluid fotoperfil" src="{{persona.img}}" />
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex justify-content-center  namerol">
             <h3>
-                <p class="d-flex flex-column" id="nombre">Fernán Benitez</p>
+                <p class="d-flex flex-column" id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
             </h3>
             <p class="d-flex flex-column" id="rol">Full Stack Developer</p>
         </div>
