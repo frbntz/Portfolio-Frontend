@@ -24,6 +24,8 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
 import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
+import { EditHskillComponent } from './componentes/skills/edit-hskill.component';
+import { EditSskillComponent } from './componentes/skills/edit-sskill.component';
 
 
 
@@ -46,7 +48,9 @@ import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.com
     EditEducacionComponent,
     EditExperienciaComponent,
     NewExperienciaComponent,
-    EditAcercadeComponent
+    EditAcercadeComponent,
+    EditHskillComponent,
+    EditSskillComponent
   ],
   imports: [
     BrowserModule,

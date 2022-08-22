@@ -1,0 +1,15 @@
+<div class="container" *ngIf="softSkill">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="softSkill">Descripción de las Soft Skills</label>
+                    <textarea class="form-control" id="softSkill" name="softSkill" [(ngModel)]="softSkill.softSkill" required></textarea>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar Soft Skills
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
