@@ -14,6 +14,10 @@ export class PersonaService {
   public getPersona(): Observable<Persona>{
     return this.http.get<Persona>(this.URL + 'traer/perfil') 
   }
+
+  public update(id: number, persona: Persona): Observable<any> {
+    return this.http.put<any>(this.URL + 'editar/${id}', persona)
+  }
     
     //tirale a la concatenación la URL que falte para un get en el java o en la direccion
 

@@ -23,6 +23,7 @@ import { NewEducacionComponent } from './componentes/educacion/new-educacion.com
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
 
 
 
@@ -44,7 +45,8 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
     NewEducacionComponent,
     EditEducacionComponent,
     EditExperienciaComponent,
-    NewExperienciaComponent
+    NewExperienciaComponent,
+    EditAcercadeComponent
   ],
   imports: [
     BrowserModule,

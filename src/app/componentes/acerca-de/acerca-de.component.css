@@ -1,18 +1,29 @@
-.container-fluid {
+.container {
   padding: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .foto {
   margin-bottom: 50px;
-  
 }
 
-.fotoperfil {
-  width: 50%;
- 
+/*Propiedades de la imagen*/
+@media (min-width: 577px) {
+  #foto {
+    border-radius: 50%;
+  }
 }
 
+@media (max-width:576px) {
+  #foto {
+    object-fit: cover;
+    width: 45vw;
+    height: 27vh;
+    border-radius: 100%;
+  }
+}
+
+/*Nombre y rol*/
 .namerol {
   margin-top: 25px;
   flex-direction: column;
@@ -39,10 +50,11 @@
   letter-spacing: 1px;
 }
 
+/*Acerca de*/
 .acerca-de {
   margin-top: 50px;
   text-justify: auto;
-  color:aquamarine;
+  color: aquamarine;
   margin-top: 50px;
   z-index: 1;
 }
@@ -55,12 +67,9 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.about {
-  text-justify: auto;
-  border: 1.5px solid #ccd6f6d8;
+p {
+  color: goldenrod;
 }
-
-
 
 
 
