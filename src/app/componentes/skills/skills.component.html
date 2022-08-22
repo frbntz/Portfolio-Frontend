@@ -17,23 +17,36 @@
         </div>
     </div>
 
-    <div class="row softskills">
-        <div class="col skills-descripcion" contenteditable="true">
-            <p style="color: aquamarine; text-align:left;">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit animi ea quod. Atque ex culpa et
-                dolore animi a distinctio architecto, voluptatum fuga obcaecati consequuntur cumque commodi recusandae
-                vel
-                quaerat.
-            </p>
-            <p style="color:aquamarine">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis sit vel, eveniet sequi ut beatae
-                dicta, reprehenderit libero modi voluptatum. Quo tempora nisi commodi. Placeat facilis aliquid id dicta?
+    <div class="row" id="softrow">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 d-flex justify-content-center skills-descripcion"
+            *ngFor="let Skill of sSkill">
+            <p>
+                {{Skill.softSkill}}
             </p>
         </div>
 
-        <div class="col canvas">
-            <div class="skills-charts">
-                <div id="myCanvasContainer" style="color:aquamarine">
+        <div
+            class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center softskillscontainer">
+            <div class="col d-flex align-items-center justify-content-center softskillss">
+                <div class="col softskillsimg">
+                    <img class="img" id="softimg" title="resolución de problemas" alt="resolución de problemas"
+                        src="../assets/rubik.png">
+                    <img class="img" id="softimg" title="idiomas" alt="idiomas" src="../assets/translate2.png">
+                    <img class="img" id="softimg" title="organización" alt="organización" src="../assets/organized.png">
+                    <img class="img" id="softimg" title="adaptabilidad" alt="adaptabilidad"
+                        src="../assets/adaptation1.png">
+                    <img class="img" id="softimg" title="planificación" alt="planificación" src="../assets/clock.png">
+                    <img class="img" id="softimg" title="trabajo en equipo" alt="trabajo en equipo"
+                        src="../assets/teamwork.png">
+                    <img class="img" id="softimg" title="habilidades interpersonales" alt="habilidades interpersonales"
+                        src="../assets/communication.png">
+                    <img class="img" id="softimg" title="creatividad" alt="creatividad" src="../assets/lightbulb.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="myCanvasContainer" style="color:aquamarine">
                     <canvas width="300" height="300" id="myCanvas">
                         <ul id="tags">
                             <li></li>
@@ -57,12 +70,7 @@
 
                         </ul>
                     </canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
+                </div> -->
     <!--
         <div class="col-lg-6 col-sm-12 col-xs-12 hardskillscontainer">
             <div class="col hardskillsprogress">

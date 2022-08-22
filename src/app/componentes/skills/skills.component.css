@@ -1,7 +1,11 @@
-#skillscontainer {
-  color: aquamarine;
+.skills-descripcion {
+  color: aqua;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  text-align: start;
 }
 
+/*Título*/
 .skills-title {
   font-weight: 600;
   font-size: 4rem;
@@ -9,44 +13,47 @@
   color: #ccd6f6d8;
 }
 
+/*Hard Skills*/
 .hardskillscontainer {
   align-self: center;
   margin-top: 50px;
-  }
+}
 
-.hardskills{
+.hardskills {
   text-align: center;
   transform: rotate(-15deg);
   justify-self: flex-start;
-}
-
-.softskills {
-  text-align: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.p {
-  color: aquamarine;
-}
-
-.mycanvascontainer {
-  border-radius: 50%;
-}
-
-#name {
-  color: aquamarine;
-  font-weight: 600;
-  font-size: large;
-  margin-left: 10px;
+  margin-bottom: 50px;
 }
 
 .hardskillsimg{
   display: inline-flex;
   width: 11vmin;
   height: 11vmin;
-
 }
+
+/*Soft Skills*/
+#softrow {
+  margin-top: 50px;
+}
+
+.p {
+  color: aqua;
+}
+
+.softskillsimg {
+  text-align: center;
+}
+
+ #softimg {
+  display: inline-flex;
+  width: 9vmin;
+  height: 9vmin;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin: 2px;
+ }
+
 
 /*.row {
   padding-top: 100px;
