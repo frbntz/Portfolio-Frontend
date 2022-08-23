@@ -1,5 +1,32 @@
 <div class="container">
     <div class="row" id="row">
+        <div class="col d-flex justify-content-start">
+            <h1 id="title">Proyectos<br> realizados</h1>
+        </div>
+    </div>
+    <div class="row" id="card">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngFor="let Proyecto of proyecto">
+            <div class="card text-white card-has-bg click-col"
+                style="background-image:url('../../../assets/profport.png');">
+                <img class="card-img d-none" src="../../../assets/profport.png" alt="{{Proyecto.nombre}}">
+                <div class="card-img-overlay d-flex flex-column">
+                    <div class="card-body">
+                        <small class="card-meta mb-2">{{Proyecto.nombre}}</small>
+                        <h4 class="card-title mt-0 ">
+                            <p class="text-white">{{Proyecto.descripcion}}</p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--<div class="container">
+    <div class="row" id="row">
         <div class="col">
             <h1 id="title">Proyectos<br> realizados</h1>
         </div>
@@ -20,7 +47,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 <!--Alguna imagen tal vez. offset te marca que en el caso de estar en
             por ejemplo md dejar una columna entre medio de los elementos. En este caso

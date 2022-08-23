@@ -1,5 +1,5 @@
 .skills-descripcion {
-  color: aqua;
+  color: goldenrod;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.5px;
   text-align: start;
@@ -42,9 +42,6 @@
   text-align: end;
 }
 
-.p {
-  color: aqua;
-}
 
 .softskillsimg {
   text-align: center;
