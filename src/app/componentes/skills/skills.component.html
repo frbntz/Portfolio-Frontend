@@ -9,14 +9,19 @@
         </div>
 
         <div class="col-lg-6 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center hardskillscontainer">
+            <div class="col-3 d-flex justify-content-end align-items-center addhskill" *ngIf="isLogged">
+                <button type="button" class="btn btn-dark button" routerLink="/nuevahskill" title="Agregar nueva hard skill" id="new">
+                    <i class="bi bi-plus-circle-fill"></i>
+                </button>
+            </div>
             <div class="col hardskills">
                 <div class="col hardskillsimg" style="margin: 15px" *ngFor="let Hskill of hSkill">
                     <div class="buttons" *ngIf="isLogged">
                         <button class="btn btn-light button" style="background-color:{{Hskill.color}}"
-                            routerLink="/edithskill/{{Hskill.id}}" id="edit">
+                            routerLink="/edithskill/{{Hskill.id}}" title="Editar hard skill" id="edit">
                             <i class="bi bi-pencil-fill"></i></button>
                         <button class="btn btn-danger button" style="background-color:{{Hskill.color}}"
-                            (click)="deleteHSkill(Hskill.id)" id="delete">
+                            (click)="deleteHSkill(Hskill.id)" title="Eliminar hard skill" id="delete">
                             <i class="bi bi-trash-fill"></i></button>
                     </div>
                     <img src="{{Hskill.img}}" alt="{{Hskill.nombre}}" title="{{Hskill.nombre}}">
@@ -26,10 +31,6 @@
     </div>
 
     <div class="row softdescripcion">
-        <div class="buttons" *ngIf="isLogged">
-            <button class="btn btn-light button" id="edit">
-                <i class="bi bi-pencil-fill"></i></button>
-        </div>
         <div class="col d-flex justify-content-evenly softskillsimg" style="border-top: 1px solid #009ddc">
             <img class="img" id="softimg" title="resolución de problemas" alt="resolución de problemas"
                 src="../assets/rubik.png">
@@ -45,8 +46,12 @@
         </div>
     </div>
 
-    <div class="row softdescripcion">
+    <div class="row softdescripcionrow">
         <div class="col" *ngFor="let Skill of sSkill">
+            <div class="buttons" *ngIf="isLogged">
+                <button class="btn btn-light button" routerLink="/editsskill/{{Skill.id}}" title="Editar párrafo de soft skills" id="edit">
+                    <i class="bi bi-pencil-fill"></i></button>
+            </div>
             <div class="col d-flex justify-content-center softdescripcion">
 
                 <p>{{Skill.softSkill}}</p>

@@ -23,6 +23,17 @@
   }
 }
 
+/*Botón*/
+.buttonsabout {
+  justify-content:end;
+  align-items: end;
+}
+
+#edit {
+  align-self: flex-end;
+  justify-self: end;
+}
+
 /*Nombre y rol*/
 .namerol {
   margin-top: 25px;
@@ -65,15 +76,6 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-
-/*
-@media (min-width: 576px) {
-  #profilepic {
-    position: relative;
-    width: 150%;
-    border-radius: 90%;
-    box-shadow: 1px 3px 2px aquamarine;
-    z-index: 1
-  }
-}*/
+.ant-descripcion h5 p {
+  font-family: tisa;
+}

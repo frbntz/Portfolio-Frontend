@@ -1,12 +1,12 @@
 <div class="container">
     <div class="row d-flex justify-content-evenly foto">
-         <div class="d-flex align-items-start justify-content-end buttons " *ngIf="isLogged">
-                <button class="btn btn-light button" id="edit" routerLink="/editarpersona/{id}">
-                    <i class="bi bi-pencil-fill"></i></button>
-                <!-- <button class="btn btn-danger button" id="delete">
+        <div class="d-flex justify-content-end buttons" *ngIf="isLogged">
+            <button class="btn btn-light button" title="Editar persona" id="edit" routerLink="/editarpersona/{id}">
+                <i class="bi bi-pencil-fill"></i></button>
+            <!-- <button class="btn btn-danger button" id="delete">
                     <i class="bi bi-trash-fill"></i></button> -->
-            </div>
-            <div class="col-lg-2 col-md-5 col-sm-3 col-xs-12 d-flex justify-content-center profilepic">
+        </div>
+        <div class="col-lg-2 col-md-5 col-sm-3 col-xs-12 d-flex justify-content-center profilepic">
             <img class="img-fluid" alt="Foto de perfil" src="{{persona.img}}" id="foto" />
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-flex justify-content-center  namerol">
@@ -23,7 +23,7 @@
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 antecedentes"
             style="border-top: 2px solid #009ddc; border-bottom: 2px solid #009ddc">
-           
+
             <div>
                 <div class="ant-descripcion">
                     <h5>

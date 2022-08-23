@@ -26,6 +26,10 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EditAcercadeComponent } from './componentes/acerca-de/edit-acercade.component';
 import { EditHskillComponent } from './componentes/skills/edit-hskill.component';
 import { EditSskillComponent } from './componentes/skills/edit-sskill.component';
+import { NewHskillComponent } from './componentes/skills/new-hskill.component';
+import { NewSskillComponent } from './componentes/skills/new-sskill.component';
+import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
+import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 
 
 
@@ -50,7 +54,11 @@ import { EditSskillComponent } from './componentes/skills/edit-sskill.component'
     NewExperienciaComponent,
     EditAcercadeComponent,
     EditHskillComponent,
-    EditSskillComponent
+    EditSskillComponent,
+    NewHskillComponent,
+    NewSskillComponent,
+    NewProyectoComponent,
+    EditProyectoComponent
   ],
   imports: [
     BrowserModule,

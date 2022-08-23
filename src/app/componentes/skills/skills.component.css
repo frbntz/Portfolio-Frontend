@@ -23,7 +23,7 @@
   margin-bottom: 50px;
 }
 
-.hardskillsimg{
+.hardskillsimg {
   display: inline-flex;
   width: 11vmin;
   height: 11vmin;
@@ -46,31 +46,38 @@
   margin-top: 30px;
 }
 
- #softimg {
+#softimg {
   display: inline-flex;
   width: 9vmin;
   height: 9vmin;
   background-color: whitesmoke;
   border-radius: 50%;
   margin-top: 15px;
- }
+}
 
- .antecedentes {
+.antecedentes {
   width: 80%;
   margin: 1%;
- }
+}
 
- .softdescripcion {
+.softdescripcionrow {
+  margin-top: 40px;
   margin-left: 5%;
   margin-right: 5%;
- }
+}
 
- p {
+.softdescripcion {
+
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p {
   color: #ccd6f6d8;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: tisa;
   font-size: large;
   margin-top: 10px;
- }
+}
 
 /*Botones*/
 .buttons {

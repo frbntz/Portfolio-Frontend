@@ -83,6 +83,12 @@ body {
   margin: 2px;
 }
 
+#new {
+  margin-bottom: 5px;
+  margin-right: 7px;
+  border-radius: 50%;
+}
+
 #edit,
 #delete {
   z-index: inherit;

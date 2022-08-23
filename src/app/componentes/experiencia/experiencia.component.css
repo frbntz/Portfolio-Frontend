@@ -18,18 +18,7 @@
   }
 }
 
-#newexp {
-  margin-bottom: 5px;
-  margin-right: 7px;
-  border-radius: 50%;
-}
-
 .antecedentes {
   width: 80%;
   margin: 1%;
 }
-
-
-
-/*para meter en la misma linea años y título del trabajo se puede usar
-la opción display: inline-block y demás*/
