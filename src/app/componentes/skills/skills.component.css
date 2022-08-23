@@ -1,8 +1,5 @@
-.skills-descripcion {
-  color: goldenrod;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  letter-spacing: 0.5px;
-  text-align: start;
+#skillscontainer {
+  margin-top: 5%;
 }
 
 /*Título*/
@@ -37,14 +34,16 @@
   margin-top: 50px;
 }
 
-.buttons {
-  justify-content: end;
-  text-align: end;
+.skills-descripcion {
+  color: goldenrod;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  text-align: start;
 }
-
 
 .softskillsimg {
   text-align: center;
+  margin-top: 30px;
 }
 
  #softimg {
@@ -53,9 +52,31 @@
   height: 9vmin;
   background-color: whitesmoke;
   border-radius: 50%;
-  margin: 2px;
+  margin-top: 15px;
  }
 
+ .antecedentes {
+  width: 80%;
+  margin: 1%;
+ }
+
+ .softdescripcion {
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+
+ p {
+  color: #ccd6f6d8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  margin-top: 10px;
+ }
+
+/*Botones*/
+.buttons {
+  justify-content: end;
+  text-align: end;
+}
 
 /*.row {
   padding-top: 100px;

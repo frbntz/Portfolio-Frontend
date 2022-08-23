@@ -1,6 +1,12 @@
 <div class="container">
     <div class="row d-flex justify-content-evenly foto">
-        <div class="col-lg-2 col-md-5 col-sm-3 col-xs-12 d-flex justify-content-center profilepic">
+         <div class="d-flex align-items-start justify-content-end buttons " *ngIf="isLogged">
+                <button class="btn btn-light button" id="edit" routerLink="/editarpersona/{id}">
+                    <i class="bi bi-pencil-fill"></i></button>
+                <!-- <button class="btn btn-danger button" id="delete">
+                    <i class="bi bi-trash-fill"></i></button> -->
+            </div>
+            <div class="col-lg-2 col-md-5 col-sm-3 col-xs-12 d-flex justify-content-center profilepic">
             <img class="img-fluid" alt="Foto de perfil" src="{{persona.img}}" id="foto" />
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 d-flex justify-content-center  namerol">
@@ -15,16 +21,11 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 d-flex align-items-center title">
             <h1>Acerca de mi</h1>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 post-articles" style="border-top: 2px solid #81D8F7">
-            <div class="d-flex align-items-start justify-content-end buttons " *ngIf="isLogged">
-                <button class="btn btn-light button" id="edit" routerLink="/editarpersona/{id}">
-                    <i class="bi bi-pencil-fill"></i></button>
-               <!-- <button class="btn btn-danger button" id="delete">
-                    <i class="bi bi-trash-fill"></i></button> -->
-            </div>            
-            <div class="post-content">
-                <p class="post-date" style="color:#81D8F7;"></p>
-                <div class="blog-post-title">
+        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 antecedentes"
+            style="border-top: 2px solid #009ddc; border-bottom: 2px solid #009ddc">
+           
+            <div>
+                <div class="ant-descripcion">
                     <h5>
                         <p>{{persona.about}}</p>
                     </h5>

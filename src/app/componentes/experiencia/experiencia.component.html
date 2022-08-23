@@ -12,24 +12,24 @@
     </div>
 
     <div class="row d-flex justify-content-end ">
-        <div class="post-articles" style="border-top: 2px solid#81D8F7" *ngFor="let Experiencia of expe">
+        <div class="antecedentes" style="border-top: 2px solid#009ddc" *ngFor="let Experiencia of expe">
             <div class="buttons" *ngIf="isLogged">
                 <button class="btn btn-light button" routerLink="/editexp/{{Experiencia.id}}" id="edit">
                     <i class="bi bi-pencil-fill"></i></button>
                 <button class="btn btn-danger button" (click)="delete(Experiencia.id)" id="delete">
                     <i class="bi bi-trash-fill"></i></button>
             </div>
-            <div class="post-content">
-                <p class="post-date" style="color:#81D8F7;"> {{Experiencia.nombreE}}</p>
-                <div class="blog-post-title">
+            <div>
+                <p class="ant-nombre"> {{Experiencia.nombreE}}</p>
+                <div class="ant-descripcion">
                     <h5>
-                        <p style="color:goldenrod">
+                        <p>
                             {{Experiencia.descripcionE}}
                         </p>
                     </h5>
                 </div>
-                <div class="blog-post-content">
-                    <time style="color:#81D8F7">{{Experiencia.tiempoE}}</time>
+                <div class="ant-fecha">
+                    <time>{{Experiencia.tiempoE}}</time>
                 </div>
             </div>
         </div>

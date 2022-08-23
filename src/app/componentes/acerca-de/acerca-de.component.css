@@ -54,8 +54,6 @@
 .acerca-de {
   margin-top: 50px;
   text-justify: auto;
-  color: aquamarine;
-  margin-top: 50px;
   z-index: 1;
 }
 
@@ -65,10 +63,6 @@
   font-size: 4rem;
   font-weight: 600;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-p {
-  color: goldenrod;
 }
 
 
