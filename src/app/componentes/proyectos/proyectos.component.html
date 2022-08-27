@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="row" id="card">
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngFor="let Proyecto of proyecto">
+        <div class="col-xs-11 col-sm-6 col-md-6 col-lg-4 mb-4" *ngFor="let Proyecto of proyecto">
             <div class="buttons" *ngIf="isLogged">
                 <button class="btn btn-light button" routerLink="/editproyecto/{{Proyecto.id}}"
                     title="Editar proyecto" id="edit">

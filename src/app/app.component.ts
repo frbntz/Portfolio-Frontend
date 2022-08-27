@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { ParticlesConfig } from 'src/assets/particles';
 
-declare var particlesJS: any;
+declare let particlesJS: any;
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,11 @@ export class AppComponent {
   title = 'Portfolio'; 
 
   ngOnInit(): void {
-    particlesJS.load('particles-js', '../assets/particles.json', console.log("particles.json fue cargado correctamente"));
+    this.invokeParticles();
+  }
+
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
   }
 }
 
