@@ -9,7 +9,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-acercade.component.scss']
 })
 export class EditAcercadeComponent implements OnInit {
-  acercaDe: Persona = null;
+  persona: Persona = null;
 
 
   constructor(private sPersona: PersonaService, private activatedRouter: ActivatedRoute, private router: Router) { }
@@ -18,7 +18,7 @@ export class EditAcercadeComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sPersona.getPersona().subscribe(
       data => {
-        this.acercaDe = data;
+        this.persona = data;
       }, err => {
         alert("Error al modificar atributos");
         this.router.navigate(['']);
@@ -28,7 +28,7 @@ export class EditAcercadeComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sPersona.update(id, this.acercaDe).subscribe(
+    this.sPersona.update(id, this.persona).subscribe(
       data => {
         alert("Atributos actualizados")
         this.router.navigate(['']);
