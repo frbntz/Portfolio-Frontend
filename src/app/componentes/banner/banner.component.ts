@@ -13,8 +13,7 @@ export class BannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    particlesJS.load('particles-js', '../assets/particles.json', null);
   }
-  
+
 
 }

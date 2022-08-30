@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { ParticlesConfig } from 'src/assets/particles';
-
-declare let particlesJS: any;
 
 @Component({
   selector: 'app-root',
@@ -10,14 +7,8 @@ declare let particlesJS: any;
 })
 
 export class AppComponent {
-  title = 'Portfolio'; 
+  title = 'Portfolio';
 
-  ngOnInit(): void {
-    this.invokeParticles();
-  }
-
-  public invokeParticles(): void {
-    particlesJS('particles-js', ParticlesConfig, function() {});
-  }
+  ngOnInit(): void { }
 }
 
