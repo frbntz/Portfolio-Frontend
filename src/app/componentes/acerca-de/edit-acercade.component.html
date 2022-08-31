@@ -7,17 +7,18 @@
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Apellido</label>
+                    <label for="apellido">Apellido</label>
                     <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Url de la imagen</label>
+                    <label for="img">Url de la imagen</label>
                     <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
                 </div>
                 <div class="form-group">
-                    <label for="tiempoE">Acerca de mí</label>
+                    <label for="about">Acerca de mí</label>
                     <textarea class="form-control" id="about" name="about" [(ngModel)]="persona.about"></textarea>
                 </div>
+                <br>
                 <button class="btn btn-primary">
                     Actualizar atributos
                 </button>
