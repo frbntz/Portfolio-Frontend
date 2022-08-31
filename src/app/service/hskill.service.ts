@@ -7,7 +7,7 @@ import { Hskill } from '../model/hskill';
   providedIn: 'root'
 })
 export class HskillService {
-  hskillURL = 'http://localhost:8080/hskills/'
+  hskillURL = 'https://dry-tor-61448.herokuapp.com/hskills/'
 
   constructor(private httpClient: HttpClient) { }
 
